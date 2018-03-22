@@ -1,1 +1,9 @@
-style.css is the second file you need to create and save at the root of your theme folder. the first is the index.php file.
+/*
+ Theme Name: Fictional University
+ Author: Michel Frechette
+ Version: 1.0
+*/
+
+body {
+  color: orange;
+}
