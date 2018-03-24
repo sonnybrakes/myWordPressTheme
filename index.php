@@ -2,6 +2,11 @@
 
   $names = array('Mitch', 'Brad', 'John', 'Jane');
 
-?>
+  $count = 1;
 
-<p>Hi, my name is <?php echo $names[0]; ?>.</p>
+  while($count <= 10) {
+    echo "<li>$count</li>";
+    $count ++;
+  }
+
+?>
