@@ -2,10 +2,10 @@
 
   $names = array('Mitch', 'Brad', 'John', 'Jane');
 
-  $count = 1;
+  $count = 0;
 
-  while($count <= 10) {
-    echo "<li>$count</li>";
+  while($count < count($names)) {
+    echo "<li>Hi, my name is $names[$count].</li>";
     $count ++;
   }
 
