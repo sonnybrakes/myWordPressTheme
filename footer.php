@@ -1,4 +1,5 @@
 <p>greetings from footer.php</p>
 
-  </body>
+<?php wp_footer(); ?>
+</body>
 </html>
