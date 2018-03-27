@@ -1,7 +1,9 @@
 <?php get_header();
 
   while(have_posts()) {
-    the_post(); ?>
+    the_post();
+
+    ?>
 
     <div class="page-banner">
       <div class="page-banner__bg-image" style="background-image: url(images/ocean.jpg);"></div>
