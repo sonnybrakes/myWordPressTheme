@@ -11,7 +11,14 @@
 </div>
 
 <div class="container container--narrow page-section">
-  This is where the Posts will be listed in reverse chronological order.
+<?php
+  while(have_posts()) {
+    the_post(); ?>
+      <div class="post-item">
+        <h2><a href="<?php the_permalink(); ?>"><?php the_title() ?></a></h2>
+      </div>
+  <?php }
+ ?>
 </div>
 
 <?php get_footer(); ?>
