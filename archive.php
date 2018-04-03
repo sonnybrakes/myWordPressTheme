@@ -7,6 +7,9 @@ get_header(); ?>
   <div class="page-banner__content container container--narrow">
     <h1 class="page-banner__title"><?php if (is_category()) {
       echo "category name will go here";
+    }
+    if (is_author()) {
+      echo "author name will go here";
     } ?></h1>
     <div class="page-banner__intro">
       <p>Keep up with our latest news.</p>
