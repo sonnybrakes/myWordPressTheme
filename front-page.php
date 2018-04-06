@@ -15,6 +15,18 @@
     <div class="full-width-split__inner">
       <h2 class="headline headline--small-plus t-center">Upcoming Events</h2>
 
+      <?php
+      $homePageEvents = new WP_Query(array(
+        'posts_per_page' => 2,
+        'post_type' => 'event'
+      ));
+
+      while ($homePageEvents->have_posts()) {
+        $homePageEvents->the_post(); ?>
+        <li><?php the_title(); ?></li>
+      <?php }
+      ?>
+
       <div class="event-summary">
         <a class="event-summary__date t-center" href="#">
           <span class="event-summary__month">Mar</span>
