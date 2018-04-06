@@ -23,20 +23,18 @@
 
       while ($homePageEvents->have_posts()) {
         $homePageEvents->the_post(); ?>
-        <li><?php the_title(); ?></li>
+        <div class="event-summary">
+          <a class="event-summary__date t-center" href="#">
+            <span class="event-summary__month">Mar</span>
+            <span class="event-summary__day">25</span>
+          </a>
+          <div class="event-summary__content">
+            <h5 class="event-summary__title headline headline--tiny"><a href="#">Poetry in the 100</a></h5>
+            <p>Bring poems you&rsquo;ve wrote to the 100 building this Tuesday for an open mic and snacks. <a href="#" class="nu gray">Learn more</a></p>
+          </div>
+        </div>
       <?php }
       ?>
-
-      <div class="event-summary">
-        <a class="event-summary__date t-center" href="#">
-          <span class="event-summary__month">Mar</span>
-          <span class="event-summary__day">25</span>
-        </a>
-        <div class="event-summary__content">
-          <h5 class="event-summary__title headline headline--tiny"><a href="#">Poetry in the 100</a></h5>
-          <p>Bring poems you&rsquo;ve wrote to the 100 building this Tuesday for an open mic and snacks. <a href="#" class="nu gray">Learn more</a></p>
-        </div>
-      </div>
 
       <p class="t-center no-margin"><a href="#" class="btn btn--blue">View All Events</a></p>
 
